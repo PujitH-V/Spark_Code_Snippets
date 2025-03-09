@@ -20,7 +20,7 @@ def retry3(func):
 def custom_logger(message, log_mode="DEBUG"):
     """
     A custom logging function for Databricks to print logs with a predefined start,
-    logging mode (default is DEBUG), current timestamp, and the log message.
+    logging mode (default is DEBUG), current timestamp, the line number where the log message is being executed, and the log message.
 
     :param message: The message to log.
     :param log_mode: The mode of logging (e.g., INFO, DEBUG, ERROR). Defaults to DEBUG.
